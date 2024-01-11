@@ -1,0 +1,14 @@
+alive: wudajundeMacBook-Pro.local 127.0.0.1:60002
+query-clock: 2
+clock: 2
+alive: wudajundeMacBook-Pro.local 127.0.0.1:60002
+query-clock: 3
+alive: wudajundeMacBook-Pro.local 127.0.0.1:60002
+leave
+clock: 3
+alive: wudajundeMacBook-Pro.local 127.0.0.1:60002
+leave
+clock: 4
+alive: wudajundeMacBook-Pro.local 127.0.0.1:60002
+leave
+clock: 5

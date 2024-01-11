@@ -1,0 +1,6 @@
+alive: wudajundeMacBook-Pro.local 127.0.0.1:60000
+clock: 1
+query-clock: 2
+clock: 2
+query-clock: 3
+clock: 3

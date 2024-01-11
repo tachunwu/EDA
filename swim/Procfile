@@ -1,0 +1,25 @@
+nats-server-0: ./../nats-server -p 60000
+# nats-server-1: ./../nats-server -p 60001
+# nats-server-2: ./../nats-server -p 60002
+# nats-server-3: ./../nats-server -p 60003
+# nats-server-4: ./../nats-server -p 60004
+# nats-server-5: ./../nats-server -p 60005
+
+serf-0: ./../serf agent -snapshot -node=n0 -bind=localhost:60000 -rpc-addr=localhost:7373
+serf-1: ./../serf agent -snapshot -node=n1 -bind=localhost:60001 -rpc-addr=localhost:7374
+serf-2: ./../serf agent -snapshot -node=n2 -bind=localhost:60002 -rpc-addr=localhost:7375
+# serf-3: ./../serf agent -snapshot -node=n3 -bind=127.0.0.1:60003 -rpc-addr=127.0.0.1:7376
+# serf-4: ./../serf agent -snapshot -node=n4 -bind=127.0.0.1:60004 -rpc-addr=127.0.0.1:7377
+# serf-5: ./../serf agent -snapshot -node=n5 -bind=127.0.0.1:60005 -rpc-addr=127.0.0.1:7378
+
+# join-0: serf join 127.0.0.1:60000 -rpc-addr=localhost:7373
+# join-1: serf join 127.0.0.1:60001 -rpc-addr=localhost:7374
+# join-2: serf join 127.0.0.1:60002
+# join-3: serf join 127.0.0.1:60003
+# join-4: serf join 127.0.0.1:60004
+# join-5: serf join 127.0.0.1:60005
+
+
+# serf-0: ./../serf agent -node=n2 -bind=127.0.0.1:60002 -rpc-addr=127.0.0.1:7376
+
+...

@@ -1,0 +1,52 @@
+syntax = "proto3";
+package eda;
+option go_package = "github.com/tachunwu/eda";
+message Person {
+}
+enum PhoneType {
+  PHONE_TYPE_UNSPECIFIED = 0;
+  PHONE_TYPE_MOBILE = 1;
+  PHONE_TYPE_HOME = 2;
+  PHONE_TYPE_WORK = 3;
+}
+// Our address book file is just one of these.
+message AddressBook {
+  repeated Person people = 1;
+}
+
+/////////////////////////////////////////
+
+message Machine {
+  repeated Component components = 1;
+}
+message Component {
+  repeated Device devices = 1;
+}
+message Device {
+
+}
+
+message MachineParamUpdated {}
+
+/////////////////////////////////////////
+
+message Task {
+  int64 delay = 1;
+}
+
+message TaskDoned {
+
+}
+
+message TaskQueued {
+
+}
+
+enum TaskState {
+  QUEUED = 0;
+  DONED = 1;
+}
+
+message TaskStatus {
+  TaskState state = 1;
+}

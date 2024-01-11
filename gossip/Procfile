@@ -1,0 +1,11 @@
+gossip-root: ./../nats-server -m 8222 -D -p 4222 -cluster nats://localhost:6222
+gossip-0:    ./../nats-server -m 8223 -D -p 4223 -cluster nats://localhost:6223 -routes nats://localhost:6222
+gossip-1:    ./../nats-server -m 8224 -D -p 4224 -cluster nats://localhost:6224 -routes nats://localhost:6222
+gossip-2:    ./../nats-server -m 8225 -D -p 4225 -cluster nats://localhost:6225 -routes nats://localhost:6222
+gossip-3:    ./../nats-server -m 8226 -D -p 4226 -cluster nats://localhost:6226 -routes nats://localhost:6222
+# gossip-4:    ./../nats-server -m 8227 -D -p 4227 -cluster nats://localhost:6227 -routes nats://localhost:6222
+# gossip-5:    ./../nats-server -m 8228 -D -p 4228 -cluster nats://localhost:6228 -routes nats://localhost:6222
+# gossip-6:    ./../nats-server -m 8229 -D -p 4229 -cluster nats://localhost:6229 -routes nats://localhost:6222
+# gossip-7:    ./../nats-server -m 8230 -D -p 4230 -cluster nats://localhost:6230 -routes nats://localhost:6222
+# gossip-8:    ./../nats-server -m 8231 -D -p 4231 -cluster nats://localhost:6231 -routes nats://localhost:6222
+# gossip-9:   ./../nats-server -m 8232 -D -p 4232 -cluster nats://localhost:6232 -routes nats://localhost:6222
