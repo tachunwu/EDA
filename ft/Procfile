@@ -1,0 +1,10 @@
+task-processor-0: ./../nats-server -p 5001 -m 8222 -DV 
+# task-processor-1: ./../nats-server -p 5001 -m 8223 -DV -cluster nats://localhost:6223 -routes nats://localhost:6222
+# task-processor-2: ./../nats-server -p 5002 -m 8224 -DV -cluster nats://localhost:6224 -routes nats://localhost:6222
+# task-processor-3: ./../nats-server -p 5003 -m 8225 -DV -cluster nats://localhost:6225 -routes nats://localhost:6222
+# task-processor-4: ./../nats-server -p 5004 -m 8226 -DV -cluster nats://localhost:6226 -routes nats://localhost:6222
+# task-processor-5: ./../nats-server -p 5005 -m 8227 -DV -cluster nats://localhost:6227 -routes nats://localhost:6222
+# task-processor-6: ./../nats-server -p 5006 -m 8228 -DV -cluster nats://localhost:6228 -routes nats://localhost:6222
+# task-processor-7: ./../nats-server -p 5007 -m 8229 -DV -cluster nats://localhost:6229 -routes nats://localhost:6222
+# task-processor-8: ./../nats-server -p 5008 -m 8230 -DV -cluster nats://localhost:6230 -routes nats://localhost:6222
+# task-processor-9: ./../nats-server -p 5009 -m 8231 -DV -cluster nats://localhost:6231 -routes nats://localhost:6222
